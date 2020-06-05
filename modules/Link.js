@@ -38,12 +38,12 @@ function resolveToLocation(to, router) {
  *
  *   <Link to={`/posts/${post.id}`} />
  */
-class Link extends Component{
+class Link extends Component {
   constructor(props) {
     super(props)
 
     // No autobind in classes
-    this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick(event) {

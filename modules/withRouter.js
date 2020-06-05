@@ -1,4 +1,3 @@
-import invariant from 'invariant'
 import React, { Component } from 'react'
 import hoistStatics from 'hoist-non-react-statics'
 import { CreateContextSubscriber } from './ContextUtils'
@@ -28,7 +27,7 @@ export default function withRouter(WrappedComponent, options) {
       const props = { ...this.props, router, params, location, routes }
 
       if (props.withRef) {
-        props.ref = (c) => props.withRef(c);
+        props.ref = (c) => props.withRef(c)
       }
 
       return <WrappedComponent {...props} />
@@ -36,7 +35,7 @@ export default function withRouter(WrappedComponent, options) {
   }
 
   const withRef = options && options.withRef
-  const ContextWithRouter = CreateContextSubscriber(WithRouter, 'router', { withRef });
+  const ContextWithRouter = CreateContextSubscriber(WithRouter, 'router', { withRef })
 
   ContextWithRouter.displayName = `withRouter(${getDisplayName(WrappedComponent)})`
   ContextWithRouter.WrappedComponent = WrappedComponent

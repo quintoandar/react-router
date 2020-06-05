@@ -100,6 +100,6 @@ class RouterComponent extends Component {
 }
 
 const RouterContext = CreateContextProvider(RouterComponent, 'router')
-RouterContext.displayName = 'RouterContext';
+RouterContext.displayName = 'RouterContext'
 
 export default RouterContext

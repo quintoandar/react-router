@@ -1,7 +1,7 @@
 {
-  "name": "react-router",
-  "version": "3.2.6",
-  "description": "A complete routing library for React",
+  "name": "@quintoandar/react-router",
+  "version": "0.0.1",
+  "description": "React Router v3 compatible with concurrent mode",
   "files": [
     "*.md",
     "docs",
@@ -13,8 +13,8 @@
   "module": "es/index",
   "jsnext:main": "es/index",
   "repository": "ReactTraining/react-router",
-  "homepage": "https://github.com/ReactTraining/react-router#readme",
-  "bugs": "https://github.com/ReactTraining/react-router/issues",
+  "homepage": "https://github.com/quintoandar/react-router#readme",
+  "bugs": "https://github.com/quintoandar/react-router/issues",
   "scripts": {
     "build": "npm run build-cjs && npm run build-es",
     "build-cjs": "rimraf lib && cross-env BABEL_ENV=cjs babel ./modules -d lib --ignore __tests__",
@@ -30,7 +30,8 @@
   },
   "authors": [
     "Ryan Florence",
-    "Michael Jackson"
+    "Michael Jackson",
+    "Gabriel Capanema"
   ],
   "license": "MIT",
   "dependencies": {

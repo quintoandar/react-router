@@ -105,7 +105,7 @@ class Link extends Component {
       }
     }
 
-    return <a onClick={this.handleClick} ref={innerRef} {...props} />
+    return <a ref={innerRef} {...props} onClick={this.handleClick} />
   }
 
 }

@@ -80,7 +80,13 @@ class Link extends Component {
 
     if (router) {
       if (withRef) {
-        props.ref = (c) => withRef(c)
+        props.ref = (c) => {
+          if (typeof innerRef === 'function') {
+            innerRef(c)
+          }
+
+          return withRef(c)
+        }
       }
 
       // If user does not specify a `to` prop, return an empty anchor tag.
